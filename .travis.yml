@@ -30,6 +30,24 @@ matrix:
       env:
         - BUILD_NAME=linux_generic
         - DETAILS="linux, s390x"
+        
+    - os: linux
+      dist: xenial
+      compiler: gcc
+      arch: ppc64le
+      services:
+        - docker
+      env:
+        - BUILD_NAME=publish_doc
+        - DETAILS="publish_doc"
+
+    - os: linux
+      dist: bionic
+      compiler: gcc
+      arch: ppc64le
+      env:
+        - BUILD_NAME=linux_generic
+        - DETAILS="linux, ppc64le"
 
     - os: linux
       dist: bionic
