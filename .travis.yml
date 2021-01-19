@@ -49,14 +49,6 @@ matrix:
         - BUILD_NAME=linux_generic
         - DETAILS="linux, ppc64le"
 
-    - os: linux
-      dist: bionic
-      compiler: gcc
-      arch: arm64
-      env:
-        - BUILD_NAME=linux_generic
-        - DETAILS="linux, arm64"
-
   allow_failures:
       - env: BUILD_NAME=mingw32
 
